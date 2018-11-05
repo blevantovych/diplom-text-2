@@ -50,7 +50,7 @@ def main(func, deg, start, end, precision, allowed_error):
       return
     result = approximate(overallInterval)
     max_error = getError(result)
-    print("Interval {}".format(overallInterval)) 
+    print('Interval {}'.format(overallInterval)) 
     # print("max_error: {} Interval {} history {}".format(max_error, overallInterval, historyOfIntervals))
     condition = abs(abs(max_error) - allowed_error)
 
