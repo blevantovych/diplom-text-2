@@ -330,6 +330,38 @@ $$h = h_1 + h_2 + h_3 = 2 \sqrt{3} \sqrt[3]{3|\mu/f^{'''}(z_1)|}.$$
 
 $$p_I^{(2)} \approx \frac{1}{2\sqrt{3} \sqrt[3]{3\epsilon_I}} \int_a^b \sqrt[3]{|f^{'''}(x)|}dx,$$
 $$\epsilon_I^{(2)} \approx \frac{1}{72 \sqrt{3} p_I^{3}} \left(\int_a^b \sqrt[3]{|f^{'''}(x)|}dx \right)^3. (1.19)$$
+
+
+
+
+\newpage
+Означення 3. Наближення функції $f(x)$ сплайном $S(F, x)$ називаємо рівномірним наближенням з заданою похибкою $\mu$, якщо
+
+$$\mu_i = max_{x \in [z_{i-1}, z_i} |f(x) - S(F, x)|/ w(x) = \mu, i = \overline{1, r-1}, \mu_r \leq \mu$$
+
+Означення 4. Наближення функції $f(x)$ сплайном $S(F, x)$ називаємо рівномірним наближенням з заданою кількістю $r$ ланок, якщо
+
+\begin{equation}\label{eq:pihagor}
+    a^2 + b^2 = c^2
+\end{equation}
+
+$$\max_{x \in [z_0, z_1]} |f(x) - S(F, x)|/w(x) = max_{}$$
+
+
+\begin{equation}\label{eq:formula6}
+\begin{cases}
+f(t^{(j)}_0) - a_0 - a_1t^{(j)}_0 - \ldots - a_m(t_0^{(j)})^m=\mu_jw(t_0^{(j)}), \\
+f(t^{(j)}_1)-a_0-a_1t^{(j)}_1 - \ldots - a_m(t^{(j)}_1)^m = - \mu_jw(t^{(j)}_1),\\
+\dotfill\hfill\hbox{} \dotfill\hfill\hbox{}\\
+f(t^{(j)}_{m+1}) -a_0 -a_1t^{(j)}_{m+1} - \ldots - a_m(t^{(j)}_{m+1})^m = (-1)^{m+1}\mu_jw(t^{(j)}_{m+1}).
+\end{cases}
+\end{equation}
+
+
+
+У цій прекрасній формулі (\ref{eq:formula6}) і оцій (\ref{eq:pihagor})
+
+
 % \title{m+1
 % 	Звіт \\
 % п ро проходження практики за темою \\
